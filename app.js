@@ -33,7 +33,7 @@ app.get("/", async (req, res) => {
   WHERE title LIKE '%${search}%'`;
 
   data = await database.all(videoList);
-  console.log(search, data);
+  console.log(search);
   res.send(data);
 });
 
